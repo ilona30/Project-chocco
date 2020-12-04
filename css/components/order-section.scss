@@ -1,0 +1,20 @@
+.order-section {
+  background: url("");
+  height: 100vh;
+  min-height: 652px;
+  position: relative;
+
+  &:before {
+    content: url("../img/berry.png");
+    position: absolute;
+    bottom: 69px;
+    left: 51px;
+  }
+
+  &:after {
+    content: url("../img/Leaf5.png");
+    position: absolute;
+    bottom: 58px;
+    right: 10px;
+  }
+}

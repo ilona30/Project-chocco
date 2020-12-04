@@ -1,0 +1,18 @@
+.feature {
+  display: flex;
+}
+
+.feature__icon {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.feature__text {
+  font-size: 16px;
+  max-width: 85px;
+  font-weight: bold;
+}
+
+.feature__icon {
+  backgroun: #fff;
+}
