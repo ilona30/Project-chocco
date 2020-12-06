@@ -4,7 +4,8 @@
   left: 0;
   right: 0;
   background: #DEE2BD;
-  height: 86px;
+  padding: rem(23px) 0;
+  height: rem(86px);
 
 }
 
@@ -12,58 +13,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center; 
-}
 
-.socials {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.socials__item {
-  margin-right: 14px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.socials__link {
-  display: block;
-  text-decoration: none;
-  width: 20px;
-  height: 20px;
-  
-}
-
-.socials__item--icon--vk .socials__link {
-  background-image: url("../img/icons/vk.svg");
-
-  &:hover {
-
-  }
-}
-
-.socials__item--icon--fb .socials__link {
-  background-image: url("../img/icons/f.svg");
-
-  &:hover {
-
-  }
-}
-
-.socials__item--icon--insta .socials__link {
-  background-image: url("../img/icons/in.svg");
-
-  &:hover {
-
-  }
-}
-
-.socials__item--icon--tv .socials__link {
-  background-image: url("../img/icons/tv.svg");
-
-  &:hover {
-
+  @include phones {
+    flex-direction: column;
   }
 }

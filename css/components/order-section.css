@@ -1,0 +1,17 @@
+.order-section {
+  background: url("../img/fon.png") center center no-repeat;
+  height: 100vh;
+  min-height: rem(652px);
+  position: relative; }
+  .order-section:before {
+    content: url("../img/berry.png");
+    position: absolute;
+    bottom: rem(69px);
+    left: rem(51px); }
+  .order-section:after {
+    content: url("../img/Leaf5.png");
+    position: absolute;
+    bottom: rem(58px);
+    right: rem(10px); }
+
+/*# sourceMappingURL=order-section.css.map */

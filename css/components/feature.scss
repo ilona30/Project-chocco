@@ -3,16 +3,18 @@
 }
 
 .feature__icon {
-  width: 40px;
-  margin-right: 12px;
+  margin-right: rem(12px);
+  width: rem(40px);
 }
 
 .feature__text {
-  font-size: 16px;
-  max-width: 85px;
+  font-size: rem(16px);
+  max-width: rem(85px);
   font-weight: bold;
 }
 
-.feature__icon {
-  backgroun: #fff;
+.feature__icon-symbol {
+  fill: #C6F7FF;
+  width: rem(40px);
+  height: rem(36px);
 }

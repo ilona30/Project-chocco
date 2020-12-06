@@ -1,0 +1,18 @@
+.feature {
+  display: flex; }
+
+.feature__icon {
+  margin-right: rem(12px);
+  width: rem(40px); }
+
+.feature__text {
+  font-size: rem(16px);
+  max-width: rem(85px);
+  font-weight: bold; }
+
+.feature__icon-symbol {
+  fill: #C6F7FF;
+  width: rem(40px);
+  height: rem(36px); }
+
+/*# sourceMappingURL=feature.css.map */

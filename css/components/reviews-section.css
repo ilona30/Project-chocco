@@ -1,0 +1,15 @@
+.reviews-section {
+  position: relative;
+  background: url("../img/strawberry.png") right rem(21px) top rem(42px) no-repeat; }
+  .reviews-section:before {
+    content: url("../img/Leaf2.png");
+    position: absolute;
+    bottom: rem(-157px);
+    left: 0; }
+  .reviews-section:after {
+    content: url("../img/berries.png");
+    position: absolute;
+    bottom: rem(-86px);
+    left: 0; }
+
+/*# sourceMappingURL=reviews-section.css.map */

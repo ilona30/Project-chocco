@@ -6,7 +6,7 @@ Error: Undefined variable: "$blue".
 2:   background: url("../img/big-leaf.png") right bottom no-repeat;
 3:   background-color: $blue;
 4:   height: 100vh;
-5:   min-height: 650px;
+5:   min-height: rem(650px);
 6:   color: #fff;
 7:   position: relative;
 8: 
@@ -59,4 +59,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 3 of C:\Users\Computer\Desktop\Project-chocco\css\components\hero.scss\A \A 1: .hero {\A 2:   background: url(\"../img/big-leaf.png\") right bottom no-repeat;\A 3:   background-color: $blue;\A 4:   height: 100vh;\A 5:   min-height: 650px;\A 6:   color: #fff;\A 7:   position: relative;\A 8: "; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 3 of C:\Users\Computer\Desktop\Project-chocco\css\components\hero.scss\A \A 1: .hero {\A 2:   background: url(\"../img/big-leaf.png\") right bottom no-repeat;\A 3:   background-color: $blue;\A 4:   height: 100vh;\A 5:   min-height: rem(650px);\A 6:   color: #fff;\A 7:   position: relative;\A 8: "; }
