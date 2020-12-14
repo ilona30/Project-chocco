@@ -5,6 +5,14 @@
   flex-direction: column;
   justify-content: center;
 
+  @include tablets {
+    min-height: rem(1000px);
+  }
+
+  @include phones {
+    min-height: rem(800px);
+  }
+
   &--font--color--green {
     color: $darkGreen;
 

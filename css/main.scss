@@ -10,7 +10,7 @@ $phones: 480px;
 $blue: #61C4D9; 
 $darkGreen: #064d3c;
 
-@import "media.scss";
+@import "./media.scss";
 
 //z-indexes
 $z-fixed-menu: 100;
@@ -35,6 +35,7 @@ $z-fixed-menu: 100;
 @import "components/benefits.scss";
 @import "components/benefit.scss";
 @import "components/benefits-secion.scss";
+@import "components/slider.scss";
 @import "components/reviews.scss";
 @import "components/interactive-avatar.scss";
 @import "components/reviews-section.scss";
@@ -47,3 +48,4 @@ $z-fixed-menu: 100;
 @import "components/contacts.scss";
 @import "components/fixed-menu.scss";
 @import "components/hamburger.scss";
+@import "components/overlay-menu.scss";

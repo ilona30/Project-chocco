@@ -10,6 +10,7 @@
     content: url("../img/berries.png");
     position: absolute;
     bottom: rem(-86px);
-    left: 0; }
+    left: 0;
+    z-index: 1; }
 
 /*# sourceMappingURL=reviews-section.css.map */

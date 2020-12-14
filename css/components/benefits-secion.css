@@ -1,22 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 5 of C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss, in `phones'
-        from line 5 of C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss
+        on line 7 of C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss, in `phones'
+        from line 7 of C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss
 
-1: .benefits-section {
 2:   position: relative;
 3:   background: url("../img/leaf2.png") left top 57% no-repeat;
-4: 
-5:   @include phones {
-6:     background: none;
-7:   }
-8:   
-9:   &:before {
-10:     content: url("../img/bars-and-berries.png");
+4:   justify-content: flex-start;
+5:   padding-top: 280px;
+6: 
+7:   @include phones {
+8:     background: none;
+9:   }
+10:   
+11:   &:before {
+12:     content: url("../img/bars-and-berries.png");
 
 Backtrace:
-C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss:5:in `phones'
-C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss:5
+C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss:7:in `phones'
+C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss:7
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 5 of C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss, in `phones'\A         from line 5 of C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss\A \A 1: .benefits-section {\A 2:   position: relative;\A 3:   background: url(\"../img/leaf2.png\") left top 57% no-repeat;\A 4: \A 5:   @include phones {\A 6:     background: none;\A 7:   }\A 8:   \A 9:   &:before {\A 10:     content: url(\"../img/bars-and-berries.png\");"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 7 of C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss, in `phones'\A         from line 7 of C:\Users\Computer\Desktop\Project-chocco\css\components\benefits-secion.scss\A \A 2:   position: relative;\A 3:   background: url(\"../img/leaf2.png\") left top 57% no-repeat;\A 4:   justify-content: flex-start;\A 5:   padding-top: 280px;\A 6: \A 7:   @include phones {\A 8:     background: none;\A 9:   }\A 10:   \A 11:   &:before {\A 12:     content: url(\"../img/bars-and-berries.png\");"; }

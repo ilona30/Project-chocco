@@ -34,11 +34,11 @@
               </span>
               <span class="phone-number__text">88009039090</span>
             </a>
-            <a href="" class="hamburger">
-              <span class="hamburger__plank"></span>
-              <span class="hamburger__plank"></span>
-              <span class="hamburger__plank"></span>
-            </a>
+            <div class="button_container" id="toggle">
+              <span class="button_container__item button_container--top"></span>
+              <span class="button_container__item button_container--middle"></span>
+              <span class="button_container__item button_container--bottom"></span>
+            </div>
           </header>
           <div class="hero__title-section">
             <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
@@ -81,54 +81,150 @@
             <h2 class="section__title headline__title">Почему chocco?</h2>
             <div class="headline__subtitle">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</div>
           </div>
+          <ul class="benefits">
+            <li class="benefits__item benefit">
+              <div class="benefit__image">
+                <div class="benefit__image-wrapper">
+                  <img src="./img/icons/1.svg" alt="happy icon" class="benefit__icon">
+                </div>
+              </div>
+              <div class="benefit__text">
+                <h3 class="benefit__title">Полезно</h3>
+                <div class="benefit__desc">
+                  <p>
+                    Натуральность - ключевое качество нашей продукции. Мы используем только природные ингредиенты.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="benefits__item benefit">
+              <div class="benefit__image">
+                <div class="benefit__image-wrapper">
+                  <img src="./img/icons/3.svg" alt="smile icon" class="benefit__icon">
+                </div>
+              </div>
+              <div class="benefit__text">
+                <h3 class="benefit__title">Вкусно</h3>
+                <div class="benefit__desc">
+                  <p>
+                    Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших батончиков.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="benefits__item benefit">
+              <div class="benefit__image">
+                <div class="benefit__image-wrapper">
+                  <img src="./img/icons/2.svg" alt="hand icon" class="benefit__icon">
+                </div>
+              </div>
+              <div class="benefit__text">
+                <h3 class="benefit__title">Питательно</h3>
+                <div class="benefit__desc">
+                  <p>
+                    Высокое содержание качественного белка, а также всех необходимых витаминов и минералов.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul class="benefits">
-          <li class="benefits__item benefit">
-            <div class="benefit__image">
-              <div class="benefit__image-wrapper">
-                <img src="./img/icons/1.svg" alt="happy icon" class="benefit__icon">
-              </div>
+      </section>
+      <section class="section slider-section">
+        <div class="slider__controls">
+          <a href="#" class="slider__btn slider__btn--next">
+            <svg class="slider__arow">
+              <use xlink:href="./img/icons/sprite2.svg#arrow"></use>
+            </svg>
+          </a>
+          <a href="#" class="slider__btn slider__btn--prev">
+            <svg class="slider__arow"></svg>
+          </a>
+        </div>
+        <div class="container slider__container">
+            <div class="slider">
+              <ul class="slider__list">
+                <li class="slider__item">
+                  <div class="slider__left">
+                    <div class="slider__img">
+                      <img src="./img/sp1.png" alt="product" class="slider__pic">
+                    </div>
+                  </div>
+                  <div class="slider__right">
+                    <div class="slider__ingredients">
+                      <svg class="ingredients__icon">
+                        <use xlink:href="./img/icons/sprite2.svg#chocolate-bar"></use>
+                      </svg>
+                      <div class="ingredients__text">Состав</div>
+                      <ul class="composition">
+                        <li class="composition__item">
+                          <svg class="composition__icon">
+                            <use xlink:href="./img/icons/sprite2.svg#grape"></use>
+                          </svg>
+                          <span class="composition__name">Виноград</span>
+                          <span class="composition__amount">25г</span>
+                        </li>
+                        <li class="composition__item">
+                          <svg class="composition__icon">
+                            <use xlink:href="./img/icons/sprite2.svg#nut"></use>
+                          </svg>
+                          <span class="composition__name">Грецкий орех</span>
+                          <span class="composition__amount">32г</span>
+                        </li>
+                        <li class="composition__item">
+                          <svg class="composition__icon">
+                            <use xlink:href="./img/icons/sprite2.svg#almond"></use>
+                          </svg>
+                          <span class="composition__name">Кунжутное семя</span>
+                          <span class="composition__amount">20г</span>
+                        </li>
+                        <li class="composition__item">
+                          <svg class="composition__icon">
+                            <use xlink:href="./img/icons/sprite2.svg#powder"></use>
+                          </svg>
+                          <span class="composition__name">Сухое молоко</span>
+                          <span class="composition__amount">10г</span>
+                        </li>
+                        <li class="composition__item">
+                          <svg class="composition__icon">
+                            <use xlink:href="./img/icons/sprite2.svg#nut"></use>
+                          </svg>
+                          <span class="composition__name">Зам.сахара</span>
+                          <span class="composition__amount">4г</span>
+                        </li>
+                        <li class="composition__item">
+                          <svg class="composition__icon">
+                            <use xlink:href="./img/icons/sprite2.svg#nut"></use>
+                          </svg>
+                          <span class="composition__name">Какао бобы</span>
+                          <span class="composition__amount">4г</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider__title">Батончик "Гранола виноград"</div>
+                    <div class="slider__desc">
+                      <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                      </p>
+                    </div>
+                    <div class="slider-tag">
+                      <div class="slider-text">
+                        <div class="tag-text">Калорийность</div>
+                        <div class="tag-value">110 ккал</div>
+                      </div>
+                      <div class="slider-text">
+                        <div class="tag-text">Вес</div>
+                        <div class="tag-value">95грамм</div>
+                      </div>
+                    </div>
+                    <div class="slider-row">
+                      <div class="slider-price">140 р</div>
+                      <a href="#" class="btn btn--theme--green">Заказать</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="benefit__text">
-              <h3 class="benefit__title">Полезно</h3>
-              <div class="benefit__desc">
-                <p>
-                  Натуральность - ключевое качество нашей продукции. Мы используем только природные ингредиенты.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="benefits__item benefit">
-            <div class="benefit__image">
-              <div class="benefit__image-wrapper">
-                <img src="./img/icons/3.svg" alt="smile icon" class="benefit__icon">
-              </div>
-            </div>
-            <div class="benefit__text">
-              <h3 class="benefit__title">Вкусно</h3>
-              <div class="benefit__desc">
-                <p>
-                  Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших батончиков.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="benefits__item benefit">
-            <div class="benefit__image">
-              <div class="benefit__image-wrapper">
-                <img src="./img/icons/2.svg" alt="hand icon" class="benefit__icon">
-              </div>
-            </div>
-            <div class="benefit__text">
-              <h3 class="benefit__title">Питательно</h3>
-              <div class="benefit__desc">
-                <p>
-                  Высокое содержание качественного белка, а также всех необходимых витаминов и минералов.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+        </div>
       </section>
       <section class="section reviews-section">
         <div class="container">
@@ -291,5 +387,20 @@
       <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
     </ul>
   </nav>
+  <div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+      <ul class="overlay-menu__list">
+        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link" id="link">О нас</a></li>
+        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Батончики</a></li>
+        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Команда</a></li>
+        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Меню</a></li>
+        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Отзывы</a></li>
+        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Как мы работаем</a></li>
+        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="overlay-menu.js"></script>
 </body>
 </html>

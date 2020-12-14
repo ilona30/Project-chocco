@@ -9,6 +9,10 @@
     position: absolute;
     bottom: rem(69px);
     left: rem(51px);
+
+    @include phones {
+      display: none;
+    }
   }
 
   &:after {
@@ -16,5 +20,9 @@
     position: absolute;
     bottom: rem(58px);
     right: rem(10px);
+
+    @include phones {
+      display: none;
+    }
   }
 }

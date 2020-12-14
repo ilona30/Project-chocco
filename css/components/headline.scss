@@ -5,6 +5,10 @@
 
 .headline__title {
   margin-bottom: rem(19px);
+
+  @include tablets {
+    margin-bottom: 0;
+  }
 }
 
 .headline__subtitle {

@@ -44,6 +44,10 @@
   padding: rem(18px) rem(12px);
   border: solid rem(3px) transparent;
 
+  @include tablets {
+    padding: 5px;
+  }
+
   &--textarea {
     height: rem(152px);
     resize: none;
