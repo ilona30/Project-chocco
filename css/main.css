@@ -262,6 +262,17 @@ img {
 }
 .btn--theme--transparent:hover {
   color: #064d3c;
+  transition: 0.3s;
+}
+.btn.app-close-modal {
+  background: #064d3c;
+  border: 1px solid #064d3c;
+  color: #fff;
+}
+.btn.app-close-modal:hover {
+  background: #fff;
+  color: #064d3c;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -516,6 +527,7 @@ img {
 }
 .slider__btn--prev {
   right: -1.1111111111rem;
+  transform: rotateY(-180dg);
 }
 
 .slider {
@@ -694,17 +706,97 @@ img {
   margin-right: 1.6666666667rem;
 }
 
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 0 10%;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-align: center;
+  }
+}
+
+.team__item {
+  flex: 1;
+  text-align: center;
+  margin-right: 1.1111111111rem;
+  max-width: 12.3333333333rem;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    flex: initial;
+    margin-bottom: 1.9444444444rem;
+    margin-right: 0;
+  }
+}
+
+.team__member {
+  height: 288px;
+  margin-bottom: 20px;
+}
+
+.team--version--desktop .team-content {
+  position: absolute;
+  top: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+}
+
+.team--version--mobile {
+  display: none;
+}
+.team--version--mobile .team__item {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: flex;
+  }
+}
+
+.team__title {
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team__content {
+  overflow: hidden;
+  transition: height 0.3s;
+  height: 0;
+}
+.team__content-block .team__content-job {
+  color: #000000;
+}
+.team__content-block .team__content-text {
+  color: #666666;
+  font-weight: 300;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
 .reviews__display {
   background: #F8FAF9 url("../img/Raspberry.png") right top no-repeat;
   padding: 2.2222222222rem;
   margin-bottom: 0.8333333333rem;
   overflow: hidden;
   position: relative;
-}
-@media screen and (max-width: 768px) {
-  .reviews__display {
-    margin-bottom: 1.6666666667rem;
-  }
 }
 .reviews__display:before {
   content: "";
@@ -717,6 +809,32 @@ img {
   left: 50%;
   transform: translatex(-50%);
   top: -3.6111111111rem;
+}
+@media screen and (max-width: 480px) {
+  .reviews__display:before {
+    display: none;
+  }
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 15.5555555556rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0;
+}
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 
 .reviews__display-inner {
@@ -787,24 +905,25 @@ img {
 
 .reviews__switcher {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 3.5rem;
 }
 
-.interactive-avatar {
+.reviews__switcher-item {
   width: 4.1111111111rem;
   height: 4.1111111111rem;
   border: 0.2222222222rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
-.interactive-avatar--active {
+.reviews__switcher-item.active {
   border-color: #365A49;
 }
 
-.interactive-avatar__link {
+.reviews__switcher__link {
   position: absolute;
   top: 0;
   left: 0;
@@ -813,7 +932,7 @@ img {
   display: block;
 }
 
-.interactive-avatar__img {
+.reviews__switcher__img {
   display: block;
   width: 100%;
   height: 100%;
@@ -944,6 +1063,10 @@ img {
   justify-content: center;
 }
 
+.input-error {
+  border-color: red;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -995,6 +1118,33 @@ img {
 
 .radio__title {
   margin-right: 1.2777777778rem;
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  color: #000000;
+  font-weight: 500;
+  padding: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.error-modal {
+  color: red;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .map-section {
