@@ -15,19 +15,26 @@
   <div class="wrapper">
     <div class="maincontent">
 
-      <section class="hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
         <div class="container  hero__container">
           <header class="header">
             <img src="./img/logo.png" alt="chocco logo" class="logo">
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Батончики</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Команда</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Меню</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a> </li>
-                <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+                <li class="menu__item"> 
+                  <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a> </li>
+                <li class="menu__item"> 
+                  <a href="#" data-scroll-to="slider" class="menu__link">Батончики</a> </li>
+                <li class="menu__item"> 
+                  <a href="#" data-scroll-to="team" class="menu__link">Команда</a> </li>
+                <li class="menu__item"> 
+                  <a href="#" data-scroll-to="products" class="menu__link">Меню</a> </li>
+                <li class="menu__item"> 
+                  <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a> </li>
+                <li class="menu__item"> 
+                  <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a> </li>
+                <li class="menu__item"> 
+                  <a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a> </li>
               </ul>
             </nav>
             <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -45,7 +52,7 @@
           <div class="hero__title-section">
             <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
             <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-            <a href="#" class="btn btn--theme--white">Заказать</a>
+            <a href="#" data-scroll-to="order" class="btn btn--theme--white">Заказать</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
@@ -77,7 +84,7 @@
           </div>
         </div>
       </section>
-      <section class="section benefits-section">
+      <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -132,19 +139,19 @@
           </ul>
         </div>
       </section>
-      <section class="section slider-section">
+      <section data-sidemenu-theme="black" data-section-id="slider" class="section slider-section">
         <div class="container slider__container">
-          <a href="#" class="slider__btn slider__btn--prev">
-            <svg class="slider__arow">
-              version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	            viewBox="0 0 14.2 25.5" style="enable-background:new 0 0 14.2 25.5;" xml:space="preserve">
-              <style type="text/css">
-	            .st0{fill:#0D0E0F;}
-              </style>
-              <polygon class="st0" points="14.2,12.7 1.5,0 0,1.5 11.3,12.7 0,24 1.5,25.5 14.2,12.7 14.2,12.7 "/>
-            </svg>
-          </a>
           <div class="slider">
+            <a href="#" class="slider__btn slider__btn--prev">
+              <svg class="slider__arow">
+                version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 14.2 25.5" style="enable-background:new 0 0 14.2 25.5;" xml:space="preserve">
+                <style type="text/css">
+                .st0{fill:#0D0E0F;}
+                </style>
+                <polygon class="st0" points="14.2,12.7 1.5,0 0,1.5 11.3,12.7 0,24 1.5,25.5 14.2,12.7 14.2,12.7 "/>
+              </svg>
+            </a>
             <ul class="slider__list">
               <li class="slider__item">
                 <div class="slider__left">
@@ -155,51 +162,51 @@
                 <div class="slider__right">
                   <div class="slider__ingredients">
                     <svg class="ingredients__icon">
-                      <use xlink:href="./img/icons/sprite2.svg#chocolate-bar"></use>
+                      <use xlink:href="./img/icons/sprite2.svg#chocolateBar"></use>
                     </svg>
                     <div class="ingredients__text">Состав</div>
                     <ul class="composition">
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#grape"></use>
                         </svg>
-                        <span class="composition__name">Виноград</span>
-                        <span class="composition__amount">25г</span>
+                        <span class="composition__item-name">Виноград</span>
+                        <span class="composition__item-amount">25г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#nut"></use>
                         </svg>
-                        <span class="composition__name">Грецкий орех</span>
-                        <span class="composition__amount">32г</span>
+                        <span class="composition__item-name">Грецкий орех</span>
+                        <span class="composition__item-amount">32г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#almond"></use>
                         </svg>
-                        <span class="composition__name">Кунжутное семя</span>
-                        <span class="composition__amount">20г</span>
+                        <span class="composition__item-name">Кунжутное семя</span>
+                        <span class="composition__item-amount">20г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#powder"></use>
                         </svg>
-                        <span class="composition__name">Сухое молоко</span>
-                        <span class="composition__amount">10г</span>
+                        <span class="composition__item-name">Сухое молоко</span>
+                        <span class="composition__item-amount">10г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#nut"></use>
                         </svg>
-                        <span class="composition__name">Зам.сахара</span>
-                        <span class="composition__amount">4г</span>
+                        <span class="composition__item-name">Зам.сахара</span>
+                        <span class="composition__item-amount">4г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#nut"></use>
                         </svg>
-                        <span class="composition__name">Какао бобы</span>
-                        <span class="composition__amount">4г</span>
+                        <span class="composition__item-name">Какао бобы</span>
+                        <span class="composition__item-amount">4г</span>
                       </li>
                     </ul>
                   </div>
@@ -238,46 +245,46 @@
                     <div class="ingredients__text">Состав</div>
                     <ul class="composition">
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#grape"></use>
                         </svg>
-                        <span class="composition__name">Виноград</span>
-                        <span class="composition__amount">25г</span>
+                        <span class="composition__item-name">Виноград</span>
+                        <span class="composition__item-amount">25г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#nut"></use>
                         </svg>
-                        <span class="composition__name">Грецкий орех</span>
-                        <span class="composition__amount">32г</span>
+                        <span class="composition__item-name">Грецкий орех</span>
+                        <span class="composition__item-amount">32г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#almond"></use>
                         </svg>
-                        <span class="composition__name">Кунжутное семя</span>
-                        <span class="composition__amount">20г</span>
+                        <span class="composition__item-name">Кунжутное семя</span>
+                        <span class="composition__item-amount">20г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#powder"></use>
                         </svg>
-                        <span class="composition__name">Сухое молоко</span>
-                        <span class="composition__amount">10г</span>
+                        <span class="composition__item-name">Сухое молоко</span>
+                        <span class="composition__item-amount">10г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#nut"></use>
                         </svg>
-                        <span class="composition__name">Зам.сахара</span>
-                        <span class="composition__amount">4г</span>
+                        <span class="composition__item-name">Зам.сахара</span>
+                        <span class="composition__item-amount">4г</span>
                       </li>
                       <li class="composition__item">
-                        <svg class="composition__icon">
+                        <svg class="composition__item-icon">
                           <use xlink:href="./img/icons/sprite2.svg#nut"></use>
                         </svg>
-                        <span class="composition__name">Какао бобы</span>
-                        <span class="composition__amount">4г</span>
+                        <span class="composition__item-name">Какао бобы</span>
+                        <span class="composition__item-amount">4г</span>
                       </li>
                     </ul>
                   </div>
@@ -303,20 +310,20 @@
                 </div>
               </li>
             </ul>
+            <a href="#" class="slider__btn slider__btn--next">
+              <svg class="slider__arow">
+                version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 14.2 25.5" style="enable-background:new 0 0 14.2 25.5;" xml:space="preserve">
+                <style type="text/css">
+                .st0{fill:#0D0E0F;}
+                </style>
+                <polygon class="st0" points="14.2,12.7 1.5,0 0,1.5 11.3,12.7 0,24 1.5,25.5 14.2,12.7 14.2,12.7 "/>
+              </svg>
+            </a>
           </div>
-          <a href="#" class="slider__btn slider__btn--next">
-            <svg class="slider__arow">
-              version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	            viewBox="0 0 14.2 25.5" style="enable-background:new 0 0 14.2 25.5;" xml:space="preserve">
-              <style type="text/css">
-	            .st0{fill:#0D0E0F;}
-              </style>
-              <polygon class="st0" points="14.2,12.7 1.5,0 0,1.5 11.3,12.7 0,24 1.5,25.5 14.2,12.7 14.2,12.7 "/>
-            </svg>
-          </a>
         </div>
       </section>
-      <section class="section team-section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
         <div class="container">
           <h2 class="section__title">Команда</h2>
           <ul class="team team--version--desktop">
@@ -324,9 +331,12 @@
               <div class="team__member">
                 <img src="./img/team/Rectangle 1.png" alt="" class="team-member__pic">
               </div>
-              <button class="team__title" type="button">
+              <div class="triangle-wrapper">
+                <button class="team__title" type="button">
                 Борис Федорович
-              </button>
+                </button>
+                <div class="equilateralTriangle active"></div>
+              </div>
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__content-job">Главный технолог</div>
@@ -342,9 +352,12 @@
               <div class="team__member">
                 <img src="./img/team/Rectangle 2.png" alt="" class="team-member__pic">
               </div>
-              <button class="team__title" type="button">
+              <div class="triangle-wrapper">
+                <button class="team__title" type="button">
                 Алла Иванова
-              </button>
+                </button>
+                <div class="equilateralTriangle"></div>
+              </div>
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__content-job">Специалист по упаковке</div>
@@ -360,9 +373,12 @@
               <div class="team__member">
                 <img src="./img/team/Rectangle 3.png" alt="" class="team-member__pic">
               </div>
-              <button class="team__title" type="button">
-                Кирилл Матросов
-              </button>
+              <div class="triangle-wrapper">
+                <button class="team__title" type="button">
+                Кирилл Матросов 
+                </button>
+                <div class="equilateralTriangle"></div>
+              </div>
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__content-job">Оператор</div>
@@ -378,9 +394,12 @@
               <div class="team__member">
                 <img src="./img/team/Rectangle 4.png" alt="" class="team-member__pic">
               </div>
-              <button class="team__title" type="button">
-                Мила Рыжкова
-              </button>
+              <div class="triangle-wrapper">
+                <button class="team__title" type="button">
+                  Мила Рыжкова
+                </button>
+                <div class="equilateralTriangle"></div>
+              </div>
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__content-job">PR, маркетинг</div>
@@ -396,9 +415,12 @@
           <!--mobile-->
           <ul class="team team--version--mobile">
             <li class="team__item">
-              <button class="team__title" type="button">
+              <div class="triangle-wrapper">
+                <button class="team__title" type="button">
                 Борис Федорович
-              </button>
+                </button>
+                <div class="equilateralTriangle active"></div>
+              </div>
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__member">
@@ -414,9 +436,12 @@
               </div>
             </li>
             <li class="team__item">
-              <button class="team__title" type="button">
+              <div class="triangle-wrapper">
+                <button class="team__title" type="button">
                 Алла Иванова
-              </button>
+                </button>
+                <div class="equilateralTriangle"></div>
+              </div>
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__member">
@@ -432,9 +457,12 @@
               </div>
             </li>
             <li class="team__item">
-              <button class="team__title" type="button">
+              <div class="triangle-wrapper">
+                <button class="team__title" type="button">
                 Кирилл Матросов
-              </button>
+                </button>
+                <div class="equilateralTriangle"></div>
+              </div>
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__member">
@@ -450,9 +478,12 @@
               </div>
             </li>
             <li class="team__item">
-              <button class="team__title" type="button">
+              <div class="triangle-wrapper">
+                <button class="team__title" type="button">
                 Мила Рыжкова
-              </button>
+                </button>
+                <div class="equilateralTriangle"></div>
+              </div>
               <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__member">
@@ -470,7 +501,66 @@
           </ul>
         </div>
       </section>
-      <section class="section reviews-section">
+      <section data-sidemenu-theme="black" data-section-id="products" class="section products-menu-section">
+        <h1 class="section__title products-menu-section__title">Меню</h1>
+        <ul class="products-menu">
+          <li class="products-menu__item">
+            <a class="products-menu__title" href="">
+              <img class="products-menu__image" src="./img/products/withmilk.png" alt="">
+              <div class="products-menu__text">Батончики с молоком</div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <img class="products-menu__close-icon" src="./img/icons/close.svg" alt="">
+                </button>
+                <div class="products-menu__content-text">
+                  <p>
+                    Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products-menu__item">
+            <a  class="products-menu__title"href="">
+              <img class="products-menu__image"src="./img/products/withcalamondin.png" alt="">
+              <div class="products-menu__text">С мёдом и фруктами</div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <img class="products-menu__close-icon" src="./img/icons/close.svg" alt="">
+                </button>
+                <div class="products-menu__content-text">
+                  <p>
+                    Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="products-menu__item">
+            <a  class="products-menu__title"href="">
+              <img class="products-menu__image"src="./img/products/withberries.png" alt="">
+              <div class="products-menu__text">Дикие ягоды</div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <img class="products-menu__close-icon" src="./img/icons/close.svg" alt="">
+                </button>
+                <div class="products-menu__content-text">
+                  <p>
+                    Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
@@ -546,7 +636,30 @@
           </div>
         </div>
       </section>
-      <section class="section order-section section--font--color--green">
+      <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
+        <div class="container">
+          <h2 class="section__title">Как мы работаем</h2>
+          <div class="player-section__container">
+            <div class="player active">
+              <div class="player__wrapper">
+                <div id="yt-player" class="player__elem"></div>
+                <div class="player__splash"></div>
+              </div>
+              <div class="player__controls">
+                <button class="player__start"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button"></button>
+                </div>
+                <div class="player__duration">
+                  <span class="player__duration-completed">0:00</span> :
+                  <span class="player__duration-estimate">0:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font--color--green">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
@@ -631,8 +744,8 @@
           </div>
         </div>
       </section>
-      <section class="section map-section">
-        <div id="map"></div>
+      <section data-sidemenu-theme="black" data-section-id="contacts" class="section map-section">
+        <div class="map" id="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <address class="contacts">
@@ -647,17 +760,33 @@
               </a>
             </address>
             <ul class="socials">
-              <li class="socials__item socials__item--icon--vk">
-                <a href="#" class="socials__link"></a>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__item-vk">
+                    <use xlink:href="./img/icons/sprite-soch.svg#vk"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="socials__item socials__item--icon--fb">
-                <a href="#" class="socials__link"></a>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__item-fb">
+                    <use xlink:href="./img/icons/sprite-soch.svg#fb"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="socials__item socials__item--icon--insta">
-                <a href="#" class="socials__link"></a>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__item-in">
+                    <use xlink:href="./img/icons/sprite-soch.svg#in"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="socials__item socials__item--icon--tv">
-                <a href="#" class="socials__link"></a>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials__item-tv">
+                    <use xlink:href="./img/icons/sprite-soch.svg#tv"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -667,39 +796,57 @@
   </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"> <a href="#" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item fixed-menu__item--active"> 
+        <a href="#" data-scroll-to="hero" class="fixed-menu__link"></a> 
+      </li>
+      <li class="fixed-menu__item"> 
+        <a href="#"  data-scroll-to="benefits" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item"> 
+        <a href="#"  data-scroll-to="slider" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item"> 
+        <a href="#" data-scroll-to="team" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item"> 
+        <a href="#" data-scroll-to="products" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item"> 
+        <a href="#" data-scroll-to="reviews" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item"> 
+        <a href="#" data-scroll-to="player" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item"> 
+        <a href="#" data-scroll-to="order" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item">
+         <a href="#" data-scroll-to="contacts" class="fixed-menu__link"></a> </li>
     </ul>
   </nav>
   <div class="overlay" id="overlay">
     <nav class="overlay-menu">
       <ul class="overlay-menu__list">
-        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link" id="link">О нас</a></li>
-        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Батончики</a></li>
-        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Команда</a></li>
-        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Меню</a></li>
-        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Отзывы</a></li>
-        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Как мы работаем</a></li>
-        <li class="overlay-menu__item"> <a href="#" class="overlay-menu__link">Контакты</a></li>
+        <li class="overlay-menu__item"> <a href="#" data-scroll-to="benefits" class="overlay-menu__link" id="link">О нас</a></li>
+        <li class="overlay-menu__item"> <a href="#" data-scroll-to="slider" class="overlay-menu__link">Батончики</a></li>
+        <li class="overlay-menu__item"> <a href="#" data-scroll-to="team" class="overlay-menu__link">Команда</a></li>
+        <li class="overlay-menu__item"> <a href="#" data-scroll-to="products" class="overlay-menu__link">Меню</a></li>
+        <li class="overlay-menu__item"> <a href="#" data-scroll-to="reviews" class="overlay-menu__link">Отзывы</a></li>
+        <li class="overlay-menu__item"> <a href="#" data-scroll-to="player" class="overlay-menu__link">Как мы работаем</a></li>
+        <li class="overlay-menu__item"> <a href="#" data-scroll-to="contacts" class="overlay-menu__link">Контакты</a></li>
       </ul>
     </nav>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/overlay-menu.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/acco.js"></script>
+  <script src="js/products-section.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/ops.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>
