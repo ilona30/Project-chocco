@@ -60,6 +60,8 @@
 }
 
 .team__title {
+  border: none; 
+  background: none;
   color: #000000;
   display: inline-flex;
   align-items: center;
@@ -73,6 +75,7 @@
   overflow: hidden;
   transition: height 0.3s;
   height: 0;
+  position: absolute;
 
   &-block {
     .team__content-job {
@@ -91,4 +94,32 @@ button {
   background: transparent;
   cursor: pointer;
   padding: 0;
+}
+
+.equilateralTriangle {
+	width: 0;
+	height: 0;
+  margin-top: -7px;
+  border-right: 5px solid  transparent; 
+  border-left: 5px solid  transparent; 
+  border-top: 7px solid #365A49;
+  border-bottom: 0px solid #365A49; 
+
+  
+	vertical-align: super;
+  display: inline-block;
+  margin-left: 4px;
+
+  &.active {
+    border-right: 5px solid  transparent; 
+    border-left: 5px solid  transparent; 
+    border-top: 0px solid #365A49;
+    border-bottom: 7px solid #365A49; 
+  }
+}
+
+.triangle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

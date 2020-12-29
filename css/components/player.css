@@ -1,0 +1,470 @@
+/*.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &.active .player__splash{
+    display: none;
+  }
+
+  &.paused {
+    .player__start{
+      width: rem(14px);
+      height: rem(22px);
+      border: none;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: rem(5px);
+      top: 0;
+      bottom: 0;
+      background: #626262;
+    }
+
+    &:after{
+      right: 0;
+    }
+
+    &:before {
+      left: 0;
+    }
+  }
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: url("../img/screen.png") center center/cover no-repeat;
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: rem(35px);
+  background: #3e3e3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 rem(25px);
+}*/
+.section__player .section__head-title {
+  color: #000;
+  margin-bottom: rem(40px);
+  margin-top: rem(-20px);
+}
+
+.container.player-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: rem(110px);
+  /*@include tablets  {
+    margin-bottom: rem(86px);
+  }
+
+  @include phones {
+    margin-bottom: rem(92px);
+  }*/
+}
+
+.section__player {
+  background: #F8FAF9;
+}
+
+.player {
+  position: relative;
+  display: flex;
+  width: rem(662px);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -12%;
+  /*@include tablets {
+    width: rem(594px);
+  }
+
+  @include phones {
+    width: rem(394px);
+  }*/
+}
+.player__controls-button {
+  margin-top: -3px;
+}
+.player__sound-icon {
+  margin-top: 9px;
+  /*@include phones {
+    margin-top: 11px;
+  }*/
+}
+.player__duration {
+  width: rem(446px);
+  /*@include tablets {
+    width: rem(400px);
+  }
+
+  @include phones {
+    width: rem(200px);
+  }*/
+}
+.player__sound-progress {
+  width: rem(60px);
+  /*@include tablets {
+    width: rem(54px);
+  }
+
+  @include phones {
+    width: rem(26px);
+  }*/
+}
+.player__start, .player__playback, .player__duration, .player__sound-progress {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.player__elem {
+  width: rem(662px);
+  /*@include tablets {
+    width: rem(594px);
+    height: rem(350px);
+  }
+
+  @include phones {
+    width: rem(394px);
+    height: rem(234px);
+  }*/
+}
+.player__splash {
+  /*@include phones {
+    margin-top: -13%;
+  }*/
+}
+.player__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.player__wrapper:before {
+  content: "";
+  background-image: url("../img/png/playerleaf.png");
+  position: absolute;
+  top: 76%;
+  left: -22%;
+  width: rem(72px);
+  height: rem(134px);
+  /*@include tablets {
+    left: -22%;
+    top: 46%;
+    width: rem(62px);
+    height: rem(116px);
+    background-size: contain;
+  }*/
+}
+.player__wrapper:after {
+  content: "";
+  background-image: url("../img/png/playerleafsmall.png");
+  position: absolute;
+  top: -10%;
+  right: -16%;
+  width: rem(90px);
+  height: rem(78px);
+  /*@include tablets {
+    right: -10%;
+    width: rem(72px);
+    height: rem(62px);
+    background-size: contain;
+  }
+
+  @include phones {
+    width: rem(60px);
+    height: rem(50px);
+  }*/
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: rem(34px);
+  background: #3e3e3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 rem(22px);
+  /*@include phones {
+    width: rem(393px);
+  }*/
+}
+.player__controls-button {
+  fill: #626262;
+}
+.player__controls-col--right {
+  display: flex;
+  /*@include phones {
+    margin-right: rem(30px);
+  }*/
+}
+.player__controls-col--left {
+  display: flex;
+}
+
+.playbutton {
+  width: rem(10px);
+  height: rem(16px);
+  vertical-align: middle;
+  margin-right: rem(25px);
+  /*@include phones {
+    margin-right: 16px;
+  }*/
+}
+.playbutton.playbutton-big {
+  fill: #fff;
+  width: rem(100px);
+  height: rem(130px);
+  position: absolute;
+  top: 33%;
+  left: 44%;
+  /*@include tablets {
+    top: 34%;
+    left: 43%;
+  }
+
+  @include phones {
+    left: 38%;
+    top: 40%;
+    width: rem(118px);
+    height: rem(148px);
+  }*/
+}
+
+#play-button-container {
+  display: inline-block;
+  width: rem(10px);
+  height: rem(16px);
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: rem(25px);
+}
+
+.play-button {
+  display: inline-block;
+  position: absolute;
+  width: rem(10px);
+  height: rem(16px);
+  background: #626262;
+  transition: -webkit-clip-path 0.3s ease;
+  transition: clip-path 0.3s ease;
+  transition: clip-path 0.3s ease, -webkit-clip-path 0.3s ease;
+}
+
+.play-button-before {
+  -webkit-clip-path: polygon(0 0, 50% 25%, 50% 75%, 0% 100%);
+          clip-path: polygon(0 0, 50% 25%, 50% 75%, 0% 100%);
+}
+
+.play-button-after {
+  -webkit-clip-path: polygon(50% 25%, 100% 50%, 100% 50%, 50% 75%);
+          clip-path: polygon(50% 25%, 100% 50%, 100% 50%, 50% 75%);
+}
+
+#play-button-container.active .play-button-before {
+  -webkit-clip-path: polygon(0 0, 30% 0, 30% 100%, 0% 100%);
+          clip-path: polygon(0 0, 30% 0, 30% 100%, 0% 100%);
+}
+
+#play-button-container.active .play-button-after {
+  -webkit-clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
+          clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
+}
+
+.duration__length {
+  width: rem(444px);
+  height: rem(6px);
+  vertical-align: middle;
+  background: #626262;
+}
+
+.soundicon {
+  width: rem(12px);
+  height: rem(16px);
+  vertical-align: middle;
+  margin-right: rem(22px);
+  /*@include phones {
+    margin-right: 12px;
+  }*/
+}
+
+.duration__length.duration__length-sound {
+  width: rem(60px);
+  height: rem(6px);
+  vertical-align: middle;
+  margin-right: rem(22px);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #626262;
+  border: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #626262;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #626262;
+  border: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  border-width: 16px 0;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #626262;
+  border: none;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #626262;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #626262;
+  border: none;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #626262;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #626262;
+  border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #626262;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: rem(-5px);
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #626262;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #626262;
+  border: none;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #626262;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #626262;
+  border: none;
+  border-radius: 50%;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #626262;
+  border: none;
+  border-radius: 50%;
+}
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #626262;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #626262;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #626262;
+}
+
+.player__start.player__start-big.player__start-big--active {
+  opacity: 0;
+}
+
+.player__start.player__start-big {
+  width: 662px;
+  height: 390px;
+  position: absolute;
+  /*@include tablets {
+    width: rem(594px);
+    height: rem(350px);
+  }
+
+  @include phones {
+    width: rem(394px);
+    height: rem(234px);
+  }*/
+}

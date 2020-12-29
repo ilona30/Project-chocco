@@ -5,16 +5,24 @@
   position: relative;
 
   &:before {
-    content: url("../img/berry.png");
+    content: "";
+    background-image: url("../img/berry7.png");
+    background-repeat: no-repeat;
     position: absolute;
-    bottom: rem(69px);
-    left: rem(51px);
+    top: -17%;
+    right: 0;
+    z-index: -10;
+    width: rem(196px);
+    height: rem(264px);
+    z-index: 1;
 
-    @include phones {
-      display: none;
+    @include tablets {
+      width: rem(110px);
+      height: rem(146px);
+      background-size: contain;
+      top: -7%;
     }
   }
-
   &:after {
     content: url("../img/Leaf5.png");
     position: absolute;

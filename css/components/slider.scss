@@ -1,5 +1,54 @@
 .slider-section {
-  background-color:#F8FAF9; 
+  background-color:#F8FAF9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &:before {
+    content: "";
+    background-image: url("../img/leaf6.png");
+    position: absolute;
+    right: 0;
+    bottom: -25%;
+    width: rem(196px);
+    height: rem(452px);
+
+    @include tablets {
+      bottom: -14%;
+      width: rem(152px);
+      height: rem(350px);
+      background-size: contain;
+    }
+
+    @include phones {
+      width: 152px;
+      height: 350px;
+    }
+  }
+
+  &:after {
+    content: "";
+    background-image: url("../img/berry2.png");
+    position: absolute;
+    bottom: -7%;
+    right: 2%;
+    height: rem(112px);
+    width: rem(135px);
+    
+
+    @include tablets {
+      background-size: contain;
+      height: rem(86px);
+      width: rem(104px);
+      bottom: 0;
+      right: 1%;
+    }
+
+    @include phones {
+      width: 104px;
+      height: 86px;
+    }
+  }
 }
 
 .slider__container {
@@ -10,22 +59,34 @@
   position: relative;
 }
 
+.slider {
+  .bx-wrapper {
+    border: 0 !important;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+
+
 ///slider-controls
 
 .slider__btn {
   position: absolute;
-  top: 50%;
-  transform: translateY(50%);
+  top: 60%;
+  transform: translateY(-50%);
   width: rem(27px);
   z-index: 20;
 
   &--next {
-    left: rem(-20px);
+    
+    right: rem(-10px);
   }
 
   &--prev {
-    right: rem(-20px);
-    transform: rotateY(-180dg);
+    left: rem(-10px);
+    transform: rotateY(-180deg) translateY(-50%);
+
   }
 }
 
@@ -43,6 +104,7 @@
   display: flex;
   transition: transform 0.3s;
   right: 0;
+  position: relative;
 }
 
 .slider__item {
@@ -60,6 +122,7 @@
 
 .slider__left {
   width: 100%;
+  
 
   @include tablets {
     width: 50%;
@@ -69,6 +132,8 @@
 .slider__img {
   display: flex;
   object-fit: cover;
+  position: relative;
+  right: 5%;
 
   @include tablets {
     align-items: center;
@@ -121,25 +186,53 @@
   position: absolute;
   top:0;
   opacity: 0;
+  transition: opacity .4s;
   left:-9999px;
   width: rem(273px);
   height: rem(344px);
   border-radius: rem(6px);
-  background: #F2F5F4;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
   transition: opacity 0.3s;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .composition__item {
-  margin-top: rem(28px);
+  display: flex;
+  flex-direction: row;
+  flex: 1;
   color: #000000;
-}
+  width: rem(246px);
+  height: rem(44px);
+  margin-top: rem(10px);
+  align-self: center;
+  /*margin-top: rem(28px);
+  color: #000000;*/
 
-.composition__icon {
-  width: rem(19px);
-  height: rem(20px);
-  padding: 0;
+  &-icon {
+    width: 15%;
+    margin-left: rem(16px);
+    margin-right: rem(10px);
+    width: rem(19px);
+    height: rem(20px);
+    padding: 0;
+  }
+
+  &-name {
+    width: 70%;
+    padding-top: rem(2px);
+  }
+
+  &-amount {
+    width: 15%;
+    text-align: center;
+    padding-left: 0;
+    padding-top: rem(2px);
+  }
 }
 
 
@@ -148,18 +241,23 @@
   font-weight: bold;
   color: #292929;
   text-transform: uppercase;
-  padding: 0;
+  margin-bottom: rem(14px);
+  margin-top: rem(23px);
   line-height: rem(42px);
+  width: rem(368px);
 
   @include tablets {
     font-size: rem(30px);
     text-align: center;
+    margin-top: rem(16px);
   }
 }
 
 .slider__desc {
   font-size: rem(18px);
   color: #666666;
+  line-height: rem(22px);
+  width: rem(368px);
 
   @include tablets {
     text-align: center;
@@ -167,10 +265,10 @@
 }
 
 .slider-tag {
-  width: 50%;
-  display: flex;
   justify-content: space-between;
-  margin-bottom: rem(24px);
+  display: flex;
+  width: 60%;
+  margin-top: rem(34px);
 
   @include tablets {
     width: initial;
@@ -180,6 +278,8 @@
 
 .tag-text {
   color: #666666;
+  flex-direction: column;
+  margin-right: rem(50px);
 }
 
 .tag-value {
