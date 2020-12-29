@@ -29,6 +29,10 @@
     bottom: rem(-40px);
     right: 0;
     content: url("../img/hero-berries.png");
+
+    @include tablets {
+      display: none;
+    }
   }
 } 
 
