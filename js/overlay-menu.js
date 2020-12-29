@@ -28,3 +28,9 @@ let menuOpenBurger = (function (options) {
 
 console.log(menuOpenBurger);
 menuOpenBurger.init();
+
+// setTimeout(menuOpenBurger.init, 3000);
+
+
+
+// setTimeout(menuOpenBurger.toggle, 1000)

@@ -11,7 +11,9 @@ const openItem = item => {
 const closeEveryItem = container => {
   const items = container.find('.team__content');
   const itemContainer = container.find("team__item");
+  const triangle = container.find('.equilateralTriangle');
 
+  triangle.removeClass('active');
   itemContainer.removeClass("active");
   items.height(0);
 }
@@ -20,11 +22,14 @@ $('.team__title').click(e => {
   const $this = $(e.currentTarget);
   const container= $this.closest('.team');
   const elemContainer = $this.closest(".team__item");
+  const triangle = $this.next('.equilateralTriangle');
+  triangle.addClass('active');
 
   if (elemContainer.hasClass("active")) {
     closeEveryItem(container);
   }else {
     closeEveryItem(container);
     openItem($this);
+    triangle.addClass('active');
   }
 });
