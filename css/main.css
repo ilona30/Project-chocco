@@ -495,11 +495,12 @@ img {
   position: relative;
   background: url("../img/leaf2.png") left top 57% no-repeat;
   justify-content: flex-start;
-  padding-top: 280px;
+  padding-top: 11.1111111111rem;
 }
 @media screen and (max-width: 480px) {
   .benefits-section {
     background: none;
+    padding-top: 7.7777777778rem;
   }
 }
 .benefits-section:before {
@@ -658,8 +659,7 @@ img {
 .ingredients__icon {
   width: 2.5555555556rem;
   height: 2.5555555556rem;
-  padding: 0;
-  fill: #FFFFFF;
+  fill: #000;
 }
 
 .slider__ingredients {
@@ -1222,6 +1222,16 @@ button {
   height: 100%;
   width: 36.6666666667rem;
 }
+@media screen and (max-width: 768px) {
+  .player {
+    width: 33rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player {
+    width: 21.8888888889rem;
+  }
+}
 .player__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -1567,11 +1577,11 @@ button {
   /*display: flex;
   justify-content: space-between;
   align-items: center;*/
-  margin-top: 2.5555555556rem;
+  margin-top: 2.1111111111rem;
 }
 @media screen and (max-width: 480px) {
   .socials {
-    margin-top: 0.8888888889rem;
+    margin-top: 0.2777777778rem;
   }
 }
 
@@ -1593,7 +1603,7 @@ button {
   position: relative;
 }
 
-.social__item {
+.socials__item {
   content: "";
   display: inline-flex;
   top: 50%;
@@ -1602,28 +1612,28 @@ button {
   width: 1.1111111111rem;
   height: 1.1111111111rem;
 }
-.social__item-vk {
+.socials__item-vk {
   fill: #B3B3B3;
 }
-.social__item-vk:hover {
+.socials__item-vk:hover {
   fill: #292929;
 }
-.social__item-fb {
+.socials__item-fb {
   fill: #B3B3B3;
 }
-.social__item-fb:hover {
+.socials__item-fb:hover {
   fill: #292929;
 }
-.social__item-in {
+.socials__item-in {
   fill: #B3B3B3;
 }
-.social__item-in:hover {
+.socials__item-in:hover {
   fill: #292929;
 }
-.social__item-tv {
+.socials__item-tv {
   fill: #B3B3B3;
 }
-.social__item-tv:hover {
+.socials__item-tv:hover {
   fill: #292929;
 }
 
@@ -1631,10 +1641,11 @@ button {
   font-style: normal;
   font-size: 1.1666666667rem;
   color: #292929;
+  margin-top: 1.3333333333rem;
 }
 @media screen and (max-width: 480px) {
   .contacts {
-    margin-bottom: 10px;
+    margin-top: 0.5555555556rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1657,8 +1668,13 @@ button {
   }
 }
 
-.fixed-menu--shadowed {
-  color: #000;
+.fixed-menu--shadowed .fixed-menu__link:before {
+  background: #626262;
+  transition: 0.3s;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link, .fixed-menu--shadowed .fixed-menu__item:hover .fixed-menu__link {
+  transition: 0.3s;
+  border-color: #626262;
 }
 
 .fixed-menu__item {

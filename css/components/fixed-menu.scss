@@ -10,7 +10,18 @@
 }
 
 .fixed-menu--shadowed {
-  color: #000;
+  .fixed-menu__link:before{
+    background: #626262;
+    transition: .3s;
+  }
+
+  .fixed-menu__item--active, .fixed-menu__item:hover{
+    .fixed-menu__link {
+      transition: .3s;
+      border-color: #626262;
+    }
+  }
+  
 }
 
 .fixed-menu__item {

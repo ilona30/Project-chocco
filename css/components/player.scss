@@ -20,7 +20,15 @@
   width: 100%;
   height: 100%;
   width: rem(660px);
-  
+
+  @include tablets {
+    width: rem(594px);
+  }
+
+  @include phones {
+    width: rem(394px);
+  }
+
 
   &__wrapper {
     display: flex;

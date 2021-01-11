@@ -2,10 +2,10 @@
   /*display: flex;
   justify-content: space-between;
   align-items: center;*/
-  margin-top: rem(46px);
+  margin-top: rem(38px);
 
   @include phones {
-    margin-top: rem(16px);
+    margin-top: rem(5px);
   }
 }
 
@@ -29,7 +29,7 @@
   
 }
 
-.social__item {
+.socials__item {
   content: "";
   display: inline-flex;
   top: 50%;
